@@ -1,0 +1,57 @@
+# =============================
+# ⚙️ Core Ignore Rules
+# =============================
+
+# System Files (Windows/macOS)
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code settings (optional)
+.vscode/
+*.code-workspace
+
+# Log files
+*.log
+
+# Node modules (in case tools like Tailwind/PostCSS are later added)
+node_modules/
+
+# Build/Dist folders (if you add SCSS compilers or bundlers later)
+dist/
+build/
+
+# Environment variables (if you use Netlify or APIs later)
+.env
+.env.local
+.env.production
+.env.development
+
+# OS swap/temp files
+*.swp
+*.tmp
+*.bak
+
+# =============================
+# 🚀 Optional Ignore
+# =============================
+
+# SASS / SCSS Cache
+.sass-cache/
+
+# npm package lock (if not using npm)
+package-lock.json
+
+# Output of Prettier or Linters
+*.eslintcache
+
+# =============================
+# 📷 Image Editors (Optional)
+# =============================
+*.psd
+*.xcf
+*.ai
+*.sketch
+*.fig
+

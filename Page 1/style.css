@@ -1,0 +1,332 @@
+/* -------------------------------------------------- */
+/* Reset and Global Styles                            */
+/* -------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 19, 19);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -------------------------------------------------- */
+/* Header Section                                     */
+/* -------------------------------------------------- */
+header {
+  width: 50%;
+}
+
+.logo img {
+  margin: 10px 0 0 14vw;
+}
+
+/* -------------------------------------------------- */
+/* Main Section                                       */
+/* -------------------------------------------------- */
+main {
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.main-content,
+.main-image {
+  width: 30%;
+}
+
+.main-content {
+  height: 60%;
+  padding: 5px;
+  padding-top: 10vh;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+}
+
+.main-content p {
+  padding-top: 2vh;
+}
+
+.main-image {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.main-button {
+  display: flex;
+  gap: 12px;
+  margin-top: 2vh;
+  width: auto;
+}
+
+button {
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.order-btn,
+.touch-btn {
+  padding: 12px 22px;
+  background-color: rgb(35, 131, 255);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.touch-btn {
+  background-color: rgb(210, 16, 16);
+  min-width: 140px;
+}
+
+/* -------------------------------------------------- */
+/* Box Images                                         */
+/* -------------------------------------------------- */
+.box {
+  width: 40%;
+  height: 40%;
+}
+
+.box1,
+.box2 {
+  height: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.box2 {
+  background-image: url("src/images/hero-back-illustration.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.box3 {
+  background-size: contain;
+  position: relative;
+  top: -5vw;
+  right: -10vw;
+}
+
+.box4 {
+  background-image: url("src/images/pricing-illustration.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* -------------------------------------------------- */
+/* Product Container                                  */
+/* -------------------------------------------------- */
+.container1 {
+  border-bottom: 0.3px solid rgb(104, 102, 102);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vw;
+  padding: 20px 0 10vh 10vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  max-width: 316px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.container2 h1 {
+  margin-bottom: 3vh;
+}
+
+.container2 p {
+  max-width: 40%;
+}
+
+/* -------------------------------------------------- */
+/* Pricing Card                                       */
+/* -------------------------------------------------- */
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: aliceblue;
+  color: black;
+  width: 20%;
+  margin-top: 6vh;
+  padding: 30px;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.price {
+  font-size: large;
+  font-weight: lighter;
+  border-bottom: 1px solid rgb(96, 94, 94);
+  padding-bottom: 10px;
+}
+
+.price-no {
+  color: red;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.dollar {
+  font-weight: 900;
+  color: rgb(2, 244, 66);
+  font-size: 2rem;
+}
+
+.get,
+.lorem {
+  padding: 14px 0;
+  border-bottom: 1px solid rgb(149, 143, 143);
+  font-weight: bolder;
+}
+
+.order-btn {
+  width: 100%;
+}
+
+/* -------------------------------------------------- */
+/* Final CTA Section                                  */
+/* -------------------------------------------------- */
+.last-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 10% 50px 10%;
+  height: 20vh;
+  padding: 30px;
+  background-color: rgba(220, 220, 220, 0.414);
+  overflow: hidden;
+}
+
+.touche-btn {
+  min-width: 126px;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bolder;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+}
+
+.last-container h1 {
+  font-size: 2rem;
+  width: auto;
+}
+
+/* -------------------------------------------------- */
+/* Footer                                             */
+/* -------------------------------------------------- */
+.first,
+.last {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icons i {
+  color: rgb(0, 108, 232);
+  padding: 10px;
+}
+
+.last ul {
+  display: flex;
+}
+
+.last ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+.last ul li a {
+  color: rgb(90, 89, 89);
+  text-decoration: none;
+}
+
+footer {
+  padding: 0 10vw;
+}
+
+/* -------------------------------------------------- */
+/* Responsive Design                                  */
+/* -------------------------------------------------- */
+@media (max-width: 768px) {
+  .main-image {
+    display: none;
+  }
+
+  .main-content {
+    width: auto;
+    text-align: center;
+  }
+
+  .main-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-btn,
+  .touch-btn {
+    width: 60%;
+  }
+
+  .container1 {
+    grid-template-columns: repeat(1, 3fr);
+    text-align: center;
+    gap: 7vh;
+    place-items: center;
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  .last-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .touche-btn {
+    width: 80%;
+    margin-top: 3vh;
+  }
+
+  .first {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo2 {
+    margin-bottom: 1vh;
+  }
+
+  .last {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: -20px;
+  }
+}
