@@ -37,7 +37,7 @@ A responsive and modern **startup landing page** template built using **HTML5 + 
 ## 📸 Screenshots
 
 ### 💡 Light Mode
-![Light Mode](/images/light%20theme.png)
+![Light Mode](images\light theme.png)
 
 ### 🌙 Dark Mode
-![Dark Mode](images/dark%20theme.png)
+![Dark Mode](/Page_2/images/light%20theme.png)
